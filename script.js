@@ -39,6 +39,7 @@ for(var i = 9; i <= 17; i++){
     for(var j = 0; j < schedule.length; j++){
         if(i.toString() === schedule[j].hour){
             textArea.val(schedule[j].description);
+            break;
         }
     }
 
@@ -66,6 +67,7 @@ function saveBtnClick(){
         if(hr === schedule[k].hour){
             schedule[k].description = desc;
             found = true;
+            break;
         }
     }
 
